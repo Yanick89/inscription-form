@@ -155,16 +155,15 @@ main input[type=submit]:hover{
 /***************PETITS ÉCRANS****************/
 
 @media (max-width: 640px) {
-main{
+/* main{
 		width: 70%;
 		height: 100%;
 		margin-left: -10px;
-	}
+	} */
 main h2{
 	font-size: 2em;
 	text-align: center;
 	color: #229BFF;
-    margin-left: 150px;
 }
 main .bloc input[type="texte"] {
     	display: inline-block;
@@ -182,7 +181,6 @@ main .commercial_form{
 	margin: 0 auto;
 	box-shadow: 0 0 20px rgba(44,43,43,0.2);
 	padding: 20px;
-    margin-left: 63px;
 	width: 300px;
 }
 main form .bloc .blocnomprenom{
