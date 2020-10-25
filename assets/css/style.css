@@ -126,6 +126,7 @@ font-family: 'montserrat', sans-serif;
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: 10px;
     padding: 7px;
+    resize: none;
     
 }
 
@@ -151,35 +152,41 @@ main input[type=submit]:hover{
     transition: 400ms ease-in-out;
 }
 
-@media (max-width: 600px) {
-	main{
+/***************PETITS ÉCRANS****************/
+
+@media (max-width: 640px) {
+main{
 		width: 70%;
 		height: 100%;
 		margin-left: -10px;
 	}
-	h2{
-		text-align: center;
-	}
-
-	commercial_form {
-		width: 50%;
-		height: 80%;
-		padding: 10px 20px;
-	}
-
-	commercial_form input[type="text"]{
-		width: 90%;
-	}
-
-	commercial_form input[type="submit"]{
-		margin: 50px;
-	}
-
-	.commercial_form input textarea{
-		width: 90%;
-		margin: 50px;
-	}
-
-
-
-	}
+main h2{
+	font-size: 2em;
+	text-align: center;
+	color: #229BFF;
+    margin-left: 150px;
+}
+main .bloc input[type="texte"] {
+    	display: inline-block;
+	flex-direction: column;
+	height: 20px;
+	padding: 10px;
+	margin: 0px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	font-size: 15px;
+    }
+main .commercial_form{
+	border-radius: 10px;
+	background-color: #fff;	
+	margin: 0 auto;
+	box-shadow: 0 0 20px rgba(44,43,43,0.2);
+	padding: 20px;
+    margin-left: 63px;
+	width: 300px;
+}
+main form .bloc .blocnomprenom{
+	display: flex;
+    flex-direction: column;
+}
+}
