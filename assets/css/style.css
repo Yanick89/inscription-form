@@ -2,39 +2,40 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: 'montserrat', sans-serif;
-	background-color: #007fff;
-	color: #000;	
+	background-image: url("../img/fond.png");
+    background-size: 100%;
+    background-position: center;
+	color: #229BFF;	
 }
 
 
 main{
-	
-	margin: 20px auto;
+		margin: 20px auto;
 }
 
 
 main h2{
 	font-size: 2em;
 	text-align: center;
-	color: #fff;
+	color: #229BFF;
 }
 
 
-main form{
+main .commercial_form{
 	border-radius: 10px;
 	background-color: #fff;	
 	margin: 0 auto;
-	box-shadow: 0 0 5px rgb(44, 43, 43);
+	box-shadow: 0 0 20px rgba(44,43,43,0.2);
 	padding: 20px;
 	width: 560px;
 }
-main form .bloc{
+main .commercial_form .bloc{
 	display: flex;
 	flex-wrap: wrap;
 	box-sizing: content-box;
 }
 
-main form .bloc .boxBloc{
+main form .bloc .blocnomprenom{
 	display: flex;
 }
 
@@ -43,7 +44,7 @@ main .bloc label{
 	padding: 5px 10px;
 }
 
-main .bloc_1, .bloc_2{
+main .bloc_nom, .bloc_prenom{
 	display: flex;
 	flex-direction: column;
 	margin: 0px;
@@ -51,21 +52,41 @@ main .bloc_1, .bloc_2{
 	width: 265px;
 }
 
-main .bloc_3, .bloc_4,
-.bloc_5, .bloc_5,
-.bloc_6, .bloc_7,
-.bloc_8, .bloc_9,
-.bloc_10{
+main .bloc_mail, .bloc_sexe,
+.bloc_birthdate,
+.bloc_mdpasse, .bloc_telephone,
+.bloc_telwhatsapp, .bloc_attentes,
+.bloc_periode{
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	margin: 5px;
 }
 
-.bloc_11{
+.bloc_peridode{
 	margin-top: 2px;
 	padding-left: 10px;
 	padding-top: 5px;
+}
+
+.commercial_form input {
+    outline: none;
+}
+
+.commercial_form input::placeholder {
+    color: rgba(0,171,225,0.5)
+}
+
+.commercial_form textarea::placeholder {
+    color: rgba(0,171,225,0.5)
+}
+
+.commercial_form input:focus {
+    box-shadow: 0px 0px 3px #229BFF;
+}
+
+.commercial_form textarea:focus {
+    box-shadow: 0px 0px 3px #229BFF;
 }
 
 main .bloc input[type="texte"],
@@ -79,7 +100,7 @@ input[type="tel"]{
 	margin: 0px;
 	border: 1px solid #ccc;
 	border-radius: 10px;
-	font-size: 20px;
+	font-size: 15px;
 }
 
 main .bloc input[type="date"]{
@@ -99,6 +120,14 @@ main .bloc input[type="password"]{
 	border: 1.5px solid #ccc; 
 }
 
+.commercial_form textarea {
+    outline: none;
+font-family: 'montserrat', sans-serif;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 7px;
+    
+}
 
 main .btnEnvoi{
 	display: flex;
@@ -107,6 +136,7 @@ main .btnEnvoi{
 }
 
 main .btnEnvoi input[type="submit"]{
+    cursor: pointer;
 	padding: 10px 20px;
 	font-size: 1.3em;
 	width: 150px;
@@ -117,8 +147,8 @@ main .btnEnvoi input[type="submit"]{
 }
 
 main input[type=submit]:hover{
-	background-color: #74d0f1;
-	cursor: pointer;
+	box-shadow: 0px 0px 10px #007fff;
+    transition: 400ms ease-in-out;
 }
 
 @media (max-width: 600px) {
@@ -131,21 +161,21 @@ main input[type=submit]:hover{
 		text-align: center;
 	}
 
-	form{
+	commercial_form {
 		width: 50%;
 		height: 80%;
 		padding: 10px 20px;
 	}
 
-	form input[type="text"]{
+	commercial_form input[type="text"]{
 		width: 90%;
 	}
 
-	form input[type="submit"]{
+	commercial_form input[type="submit"]{
 		margin: 50px;
 	}
 
-	form input textarea{
+	.commercial_form input textarea{
 		width: 90%;
 		margin: 50px;
 	}
@@ -153,13 +183,3 @@ main input[type=submit]:hover{
 
 
 	}
-  
- 
-
-
-
-	
-
-
-
-
