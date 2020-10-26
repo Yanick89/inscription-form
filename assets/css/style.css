@@ -3,9 +3,10 @@ body{
 	padding: 0;
 	font-family: 'montserrat', sans-serif;
 	background-image: url("../img/fond.png");
-    background-size: 100%;
-    background-position: center;
-	color: #229BFF;	
+	background-size: cover;
+	background-repeat: no-repeat;
+    /* background-position: center; */
+	color: #007fff;	
 }
 
 
@@ -17,7 +18,11 @@ main{
 main h2{
 	font-size: 2em;
 	text-align: center;
-	color: #229BFF;
+	color: #000;
+	display: flex;
+	flex-direction: column;
+	line-height: 5px;
+	margin-bottom: 5%;
 }
 
 
@@ -73,7 +78,7 @@ main .bloc_mail, .bloc_sexe,
     outline: none;
 }
 
-.commercial_form input::placeholder {
+/* .commercial_form input::placeholder {
     color: rgba(0,171,225,0.5)
 }
 
@@ -87,7 +92,7 @@ main .bloc_mail, .bloc_sexe,
 
 .commercial_form textarea:focus {
     box-shadow: 0px 0px 3px #229BFF;
-}
+} */
 
 main .bloc input[type="texte"],
 input[type="password"], 
@@ -100,7 +105,7 @@ input[type="tel"]{
 	margin: 0px;
 	border: 1px solid #ccc;
 	border-radius: 10px;
-	font-size: 15px;
+	font-size: 20px;
 }
 
 main .bloc input[type="date"]{
@@ -109,6 +114,8 @@ main .bloc input[type="date"]{
 	margin: 0px;
 	border: 1px solid #ccc;
 	border-radius: 10px;
+	color: #ccc;
+	font-size: 20px;
 }
 
 
@@ -122,12 +129,12 @@ main .bloc input[type="password"]{
 
 .commercial_form textarea {
     outline: none;
-font-family: 'montserrat', sans-serif;
+	font-family: 'montserrat', sans-serif;
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: 10px;
     padding: 7px;
     resize: none;
-    
+    font-size: 20px;
 }
 
 main .btnEnvoi{
@@ -143,23 +150,20 @@ main .btnEnvoi input[type="submit"]{
 	width: 150px;
 	border-radius: 20px;
 	border: none;
-	background-color: #007fff;
+	background: linear-gradient(to right, #007fff, #229bff);
 	color: #fff;
 }
 
 main input[type=submit]:hover{
 	box-shadow: 0px 0px 10px #007fff;
+	box-shadow: 0 0 3px 0 #000;
     transition: 400ms ease-in-out;
 }
 
 /***************PETITS ÉCRANS****************/
 
 @media (max-width: 640px) {
-/* main{
-		width: 70%;
-		height: 100%;
-		margin-left: -10px;
-	} */
+
 main h2{
 	font-size: 2em;
 	text-align: center;
